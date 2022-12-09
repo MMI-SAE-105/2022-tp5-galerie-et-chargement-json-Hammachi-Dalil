@@ -37,22 +37,28 @@ for (const obj of données) {
 <ul x-data="{
     données = [
     {
-        nom: "Jean",
-        projet: "Alpin.JS"
-        url: "https://alpinejs.dev/"
+        nom: 'Jean',
+        projet: 'Alpin.JS'
+        url: 'https://alpinejs.dev/''
     },
     {
-        nom: "Maxime",
-        projet: "Tailwind CSS", 
-        url: "https://tailwind.com/"
+        nom: 'Maxime',
+        projet: 'Tailwind CSS', 
+        url: 'https://tailwind.com/'
     },
     {
-        nom:"Adam",
-        projet:"Laravel"
-        url: "https://laravel.com/"
+        nom:'Adam',
+        projet:'Laravel'
+        url: 'https://laravel.com/'
     }
-]   
+],   
 }">
+    <template x-for="obj in données" >
+        <li>
+            <span x-text="obj.nom">nom</span>:
+            <a href="obj.url">projet</a>
+        </li>
+    </template>
 
 </ul>
 </body>
