@@ -89,7 +89,7 @@
         /* 1rem padding */
         padding: 1rem;
         /* White border of 2px */
-        border: 2px;
+        border: #fff 2px solid; 
 
     }
     .overlay>figure>img {
