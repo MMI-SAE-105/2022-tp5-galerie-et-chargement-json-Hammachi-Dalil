@@ -8,24 +8,39 @@
     }
     .overlay {
         /* Sit on top of the page content */
+
         /* Full width (cover the whole page) */
+        width: 100%;
         /* Full height (cover the whole page) */
+        height: 100%;
         /* Stay at the top */
+
         /* Stay at the left */
         /* Stay at the right */
         /* Stay at the bottom */
         /* Black background with opacity */
         /* Add a pointer on hover */
+        cursor: pointer;
         /* Use a grid for easy centering */
         /* Center vertically and horizontally */
     }
     .overlay::after {
         /* Add content : "X" */
+        place-content: "X";
+
         /* White text color */
+        color: #fff;
+
         /* Black background color */
+        background-color: #000;
+
         /* Font family "sans-serif" */
+        font-family: sans-serif;
+
         /* Centered text */
+        text-align: center;
         /* Line height ( idem height ) */
+        
         /* Display as a block */
         /* Position absolute */
         /* 1rem from the top */
@@ -37,10 +52,16 @@
     }
     .overlay>figure {
         /* No margin */
+        margin: 0;
         /* 1rem padding */
+        padding: 1rem;
         /* White border of 2px */
+        border: 2px;
+
     }
     .overlay>figure>img {
         /* Max width 100% for responsive image */
+        max-width: 100%;
         /* Height auto for keeping the ratio */
+        height: auto;
     }
