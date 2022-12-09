@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/galerie.css">
     <title>Galerie</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body x-data="{variable: 'https://picsum.photos/id/237/400/300', }">
+<body x-data="{
+    variable: 'https://picsum.photos/id/237/400/300', 
+}">
     <h1>Galerie</h1>
-    <p>lorem⇥</p>
-<div class="overlay">
-    <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates repellat, maiores rem dolorum id et nisi ratione deleniti consequatur, iure, veritatis numquam nulla reprehenderit illo? Dolore nostrum accusamus perferendis autem?</p>
+<div class="overlay"
+x-show="variable"
+@click="variable = null">
+    <figure><img :src="variable" alt="image 237... un chiot"></figure>
 </div>
     
 </body>
