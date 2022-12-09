@@ -61,6 +61,16 @@ for (const obj of données) {
     </template>
 
 </ul>
+
+<ul x-data="{
+    async données() {
+        const resp = await fetch('');
+        return await resp.json();
+    },
+}"
+    >
+
+</ul>
 </body>
 </html>
 
